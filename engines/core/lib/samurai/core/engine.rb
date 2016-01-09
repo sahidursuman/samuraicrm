@@ -1,5 +1,5 @@
 module Core
   class Engine < ::Rails::Engine
-    isolate_namespace Core
+    isolate_namespace Samurai
   end
 end
