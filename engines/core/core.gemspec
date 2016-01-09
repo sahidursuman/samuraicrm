@@ -1,21 +1,22 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "core/version"
+require "samurai/core/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "core"
-  s.version     = Core::VERSION
+  s.name        = "samurai_core"
+  s.version     = Samurai::Core::VERSION
   s.authors     = ["Alvin Kato J.R."]
   s.email       = ["alvinkatojr@gmail.com"]
   s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Core."
-  s.description = "TODO: Description of Core."
+  s.summary     = "Core features of Samurai CRM"
+  s.description = "Core features of Samurai CRM"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
+  s.test_files = Dir[""]
   s.add_dependency "rails", "~> 4.2.4"
 
   s.add_development_dependency "sqlite3"
