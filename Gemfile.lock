@@ -1,3 +1,9 @@
+PATH
+  remote: engines/core
+  specs:
+    samurai-core (0.0.1)
+      rails (>= 4.2.7, < 4.2.9)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -141,6 +147,7 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (>= 4.2.7, < 4.2.9)
+  samurai-core!
   sass-rails
   spring
   therubyracer
