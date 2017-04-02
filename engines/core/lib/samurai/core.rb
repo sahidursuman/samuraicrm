@@ -1,4 +1,4 @@
-require "core/engine"
+require "samurai/core/engine"
 
 module Samurai
   module Core
