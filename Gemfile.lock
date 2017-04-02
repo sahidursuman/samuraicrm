@@ -4,6 +4,7 @@ PATH
     samurai-core (0.0.1)
       autoprefixer-rails
       boostrap-sass
+      devise
       rails (>= 4.2.7, < 4.2.9)
       sass-rails
 
@@ -47,6 +48,7 @@ GEM
     arel (6.0.4)
     autoprefixer-rails (6.7.7.1)
       execjs
+    bcrypt (3.1.11)
     boostrap-sass (0.0.2)
       bootstrap-sass
     bootstrap-sass (3.3.7)
@@ -63,6 +65,12 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     debug_inspector (0.0.2)
+    devise (4.2.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 5.1)
+      responders
+      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
     globalid (0.3.7)
@@ -84,6 +92,7 @@ GEM
     minitest (5.10.1)
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
+    orm_adapter (0.5.0)
     pg (0.20.0)
     rack (1.6.5)
     rack-test (0.6.3)
@@ -114,6 +123,8 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (12.0.0)
     ref (2.0.0)
+    responders (2.3.0)
+      railties (>= 4.2.0, < 5.1)
     sass (3.4.23)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -143,6 +154,8 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.1.12)
       execjs (>= 0.3.0, < 3)
+    warden (1.2.7)
+      rack (>= 1.0)
     web-console (3.3.0)
       activemodel (>= 4.2)
       debug_inspector
