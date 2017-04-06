@@ -7,7 +7,7 @@ module Samurai
       error: "alert alert-danger"
     }
 
-    def flash_classes(level)
+    def flash_class(level)
       FLASH_CLASSES(level)
     end
   end
