@@ -8,7 +8,7 @@ module Samurai
     }
 
     def flash_class(level)
-      FLASH_CLASSES(level)
+      FLASH_CLASSES[level]
     end
   end
 end
