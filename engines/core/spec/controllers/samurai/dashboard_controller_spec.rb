@@ -36,4 +36,25 @@ module Samurai
       end
     end
   end
+
+  context 'admin' do
+    login_admin
+
+    it 'has a current_user' do
+      expect(subject.current_user).to_not be_nil
+    end
+
+    it 'has a current_user who is an admin' do
+      expect(subject.current_user.admin).to be true
+    end
+
+    it 'should get :index' do
+      get :index
+      expect(response).to be_success
+    end
+
+    it 'renders the :index view' do
+      expect(response).to render_template :index
+    end
+  end
 end
