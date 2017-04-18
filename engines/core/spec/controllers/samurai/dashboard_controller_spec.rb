@@ -16,5 +16,24 @@ module Samurai
         end
       end
     end
+
+    context 'user' do
+      login_user
+
+      describe 'GET index' do
+        it 'has a current_user' do
+          expect(subject.current_user).to_not be_nil
+        end
+
+        it 'should get :index' do
+          expect(response).to be_success
+        end
+
+        it 'renders the :index view' do
+          get :index
+          expect(response).to render_template :index
+        end
+      end
+    end
   end
 end
