@@ -1,4 +1,4 @@
-$:.push File.expand_path("../lib", __FILE__)
+http://samurails.Core features of Samurai CRM)
 
 # Maintain your gem's version:
 require "samurai/contacts/version"
@@ -9,15 +9,15 @@ Gem::Specification.new do |s|
   s.version     = Samurai::Contacts::VERSION
   s.authors     = ["alvinkatojr"]
   s.email       = ["alvinkatojr@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Samurai::Contacts."
-  s.description = "TODO: Description of Samurai::Contacts."
+  s.homepage    = "http://samurails.com"
+  s.summary     = "Core features of Samurai CRM"
+  s.description = "Core features of Samurai CRM"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.2.8"
-
-  s.add_dependency "deface"
+  s.add_dependency "samurai_core"
+  s.add_dependency "sqlite3"
 end
