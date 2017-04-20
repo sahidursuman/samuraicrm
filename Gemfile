@@ -1,14 +1,16 @@
 source 'https://rubygems.org'
 
 gem 'rails', '>= 4.2.7', '< 4.2.9'
-gem 'pg'
-gem 'sass-rails'
-gem 'uglifier'
 gem 'coffee-rails'
+gem 'deface'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
+gem 'modular_engine'
+gem 'pg'
 gem 'turbolinks'
 gem 'samurai-core', path: 'engines/core'
+gem 'sass-rails'
+gem 'uglifier'
 
 group :development, :test do
   gem 'byebug'
