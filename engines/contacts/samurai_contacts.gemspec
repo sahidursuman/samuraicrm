@@ -1,4 +1,4 @@
-http://samurails.Core features of Samurai CRM)
+$:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
 require "samurai/contacts/version"
