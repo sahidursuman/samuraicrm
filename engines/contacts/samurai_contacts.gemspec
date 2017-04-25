@@ -5,7 +5,7 @@ require "samurai/contacts/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "samurai_contacts"
+  s.name        = "samurai-contacts"
   s.version     = Samurai::Contacts::VERSION
   s.authors     = ["alvinkatojr"]
   s.email       = ["alvinkatojr@gmail.com"]
