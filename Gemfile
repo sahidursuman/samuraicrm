@@ -9,6 +9,7 @@ gem 'modular_engine'
 gem 'pg'
 gem 'turbolinks'
 gem 'samurai-core', path: 'engines/core'
+gem 'samurai-contacts', path: 'engines/contacts'
 gem 'sass-rails'
 gem 'uglifier'
 
