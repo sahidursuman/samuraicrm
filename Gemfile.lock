@@ -3,7 +3,7 @@ PATH
   specs:
     samurai-contacts (0.0.1)
       rails (~> 4.2.8)
-      samurai_core
+      samurai-core
 
 PATH
   remote: engines/core
@@ -146,13 +146,6 @@ GEM
     ref (2.0.0)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
-    samurai_core (1.0.0)
-      autoprefixer-rails (~> 5.1.5)
-      bootstrap-sass (~> 3.3.3)
-      cancan (~> 1.6.10)
-      devise (~> 3.4.1)
-      rails (~> 4.2.1)
-      sass-rails (~> 5.0.1)
     sass (3.4.23)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
