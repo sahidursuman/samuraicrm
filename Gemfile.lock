@@ -2,6 +2,7 @@ PATH
   remote: engines/contacts
   specs:
     samurai-contacts (0.0.1)
+      deface (~> 1.2.0)
       rails (~> 4.2.8)
       samurai-core
 
