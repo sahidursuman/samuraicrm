@@ -22,11 +22,17 @@ module Samurai
 
     def initialize(user)
       Rails.logger.info self.abilities.inspect
-    
+
       if user.admin?
         can :manage, :all
       else
         can :read, :dashboard
+      end
+
+      # Include any abilities added by extensions, etc
+      Ability.abilities.each do |klass|
+        ability = klass.send(:new, user)
+        @rules = rules + ability.send(:rules)
       end
     end
   end
