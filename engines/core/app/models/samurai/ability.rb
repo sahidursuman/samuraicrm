@@ -14,6 +14,12 @@ module Samurai
       self.abilities.add(ability)
     end
 
+    # Remove a registered ability.
+    # @param ability [Ability] a class that includes the CanCan::Ability module.
+    def self.remove_ability(ability)
+      self.abilities.delete(ability)
+    end
+
     def initialize(user)
 
       if user.admin?
