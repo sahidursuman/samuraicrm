@@ -21,7 +21,8 @@ module Samurai
     end
 
     def initialize(user)
-
+      Rails.logger.info self.abilities.inspect
+    
       if user.admin?
         can :manage, :all
       else
